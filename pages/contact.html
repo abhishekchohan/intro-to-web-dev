@@ -21,7 +21,80 @@
       </nav>
     </header>
     <main>
-      <p>Contact Us</p>
+      <h2>Contact Us</h2>
+      <h4>
+        For custom pre-orders or any other inquiry, please fill out the form,
+        and we'll get back to you within 24 hours. However, for any urgent
+        orders, please feel free to call us at (123)-456-7890 during business
+        hours.
+      </h4>
+      <form action="#" method="POST" id="inquiry-form" style="max-width: 480px">
+        <fieldset>
+          <legend>Inquiry Details</legend>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="inquiry-type">Inquiry Type</label>
+            <select id="inquiry-type" name="inquiry-type">
+              <option value="pre-order" selected>Pre-Order</option>
+              <option value="other-inquiry">Other Inquiry</option>
+            </select>
+          </div>
+          <div>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+      <h2>Locations</h2>
+      <p>We are serving our community from two locations in the city.</p>
+      <table>
+        <tr>
+          <th>Location</th>
+          <th>Address</th>
+        </tr>
+        <tr>
+          <td>North Star bakery @Downtown&emsp;</td>
+          <td>King St, ABC, ON, Canada</td>
+        </tr>
+        <tr>
+          <td>North Star bakery @XYZ</td>
+          <td>XYZ Ave, ABC, ON, Canada.</td>
+        </tr>
+      </table>
+      <!-- Hours and location snippets -->
+      <h2>Hours of operation</h2>
+      <p>We are open 7 days a week.</p>
+      <table>
+        <tr>
+          <th>Day of week</th>
+          <th>Timings</th>
+        </tr>
+        <tr>
+          <td>Monday - Friday&emsp;</td>
+          <td>9:00 AM - 11:30 PM</td>
+        </tr>
+        <tr>
+          <td>Saturdays</td>
+          <td>9:00 AM - 8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sundays and Stat Holidays&emsp;</td>
+          <td>11:00 AM - 5:00 PM</td>
+        </tr>
+      </table>
+      <p>We only close on New Year day and Christmas day in the entire year</p>
     </main>
     <footer>
       <p>North Star Bakery, 2026. All Rights Reserved.</p>

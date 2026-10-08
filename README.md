@@ -26,3 +26,11 @@ About: about.htmi
 - Story of the bakery
 - Sourcing philosophy
 - Staff highlights
+
+Contact: contact.html
+
+- Inquiry and pre order request form
+- Location information
+- Hours of operation
+
+Also covers (One figure featuring a "Signature Loaf with a caption)
