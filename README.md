@@ -20,3 +20,9 @@ Products: products.html
 - Pricing ranges, with no online checkout required
 
 Also covers (One figure element with a caption && One audio or video element with fallback text)
+
+About: about.htmi
+
+- Story of the bakery
+- Sourcing philosophy
+- Staff highlights
