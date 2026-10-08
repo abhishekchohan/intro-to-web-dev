@@ -40,19 +40,32 @@
             <input type="email" id="email" name="email" required />
           </div>
           <div>
-            <label for="inquiry-type">Inquiry Type</label>
+            <label for="pick-up-date">Pickup date</label>
+            <input type="date" id="pick-up-date" name="pick-up-date" required />
+          </div>
+          <div>
+            <label for="pick-up-time">Pickup Time</label>
+            <input type="time" id="pick-up-time" name="pick-up-time" required />
+          </div>
+          <div>
+            <label for="inquiry-type">Request Type</label>
             <select id="inquiry-type" name="inquiry-type">
               <option value="pre-order" selected>Pre-Order</option>
-              <option value="other-inquiry">Other Inquiry</option>
+              <option value="general-inquiry">General Inquiry</option>
             </select>
           </div>
           <div>
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required />
+            <label for="item-details">Item Details:</label>
+            <textarea
+              id="item-details"
+              name="item-details"
+              rows="6"
+              required
+            ></textarea>
           </div>
           <div>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+            <label for="notes">Allergy Notes, if applicable</label>
+            <input type="text" id="notes" name="notes" />
           </div>
           <button type="submit">Submit</button>
         </fieldset>
