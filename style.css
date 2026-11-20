@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #5d4037;
+  background-color: #fffbf0;
+}
+
+
+/* header & nav */
+header {
+  background-color: #fff;
+  padding: 15px 0;
+  border-bottom: 2px solid #d7ccc8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav img {
+  height: 60px;
+  width: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5d4037;
+  font-weight: bold;
+  margin-left: 25px;
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #f5e6d3;
+}
+
+
+/* main content */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+main p:first-of-type {
+  font-size: 18px;
+  font-weight: bold;
+  color: #8d6e63;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 48px;
+  color: #3e2723;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+main h1 + p {
+  font-size: 20px;
+  color: #8d6e63;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+main p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #3e2723;
+  margin: 35px 0 15px 0;
+  border-bottom: 3px solid #d7ccc8;
+  padding-bottom: 8px;
+}
+
+/* table style.. */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: #d7ccc8;
+  color: #3e2723;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* hero item */
+main picture {
+  text-align: center;
+  margin: 30px 0;
+  display: block;
+}
+
+main picture img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: block;
+  margin: 0 auto;
+}
+
+/* footer stye */
+footer {
+  background-color: #3e2723;
+  color: #fffbf0;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+main > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+main > div:last-child {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* desktop4 columns */
+@media (min-width: 1024px) {
+  main > div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 2 columns desktop */
+@media (min-width: 768px) and (max-width: 1023px) {
+  main > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile - only single column */
+@media (max-width: 767px) {
+  main > div {
+    grid-template-columns: 1fr;
+  }
+}
+
+main > div img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main > div h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+main > div p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+main > div:last-child video {
+  max-width: 700px;           
+  max-height: 400px;         
+  width: 100%;              
+  height: auto;              
+  display: block;           
+  margin: 0 auto 20px auto;  
+}
+
+/* media query for mobile styles. */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  main {
+    padding: 20px 15px;
+  }
+
+  th, td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  main picture img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
