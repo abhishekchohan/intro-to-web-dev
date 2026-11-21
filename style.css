@@ -16,7 +16,7 @@ body {
 header {
   background-color: #fff;
   padding: 15px 0;
-  border-bottom: 2px solid #d7ccc8;
+  border-bottom: 2px solid #5d4037;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -48,7 +48,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #f5e6d3;
+  background-color: #fffbf0;
 }
 
 
@@ -62,7 +62,7 @@ main {
 main p:first-of-type {
   font-size: 18px;
   font-weight: bold;
-  color: #8d6e63;
+  color: #5d4037;
   margin-bottom: 10px;
 }
 
@@ -75,7 +75,7 @@ h1 {
 
 main h1 + p {
   font-size: 20px;
-  color: #8d6e63;
+  color: #5d4037;
   margin-bottom: 30px;
   font-style: italic;
 }
@@ -89,7 +89,7 @@ h2 {
   font-size: 28px;
   color: #3e2723;
   margin: 35px 0 15px 0;
-  border-bottom: 3px solid #d7ccc8;
+  border-bottom: 3px solid #5d4037;
   padding-bottom: 8px;
 }
 
@@ -101,18 +101,18 @@ table {
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(62, 39, 35, 0.1);
 }
 
 th, td {
   padding: 15px;
   text-align: left;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #5d4037;
 }
 
 th {
-  background-color: #d7ccc8;
-  color: #3e2723;
+  background-color: #3e2723;
+  color: #fffbf0;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
@@ -123,7 +123,7 @@ tr:last-child td {
 }
 
 tr:hover {
-  background-color: #f5f5f5;
+  background-color: #fffbf0;
 }
 
 /* hero item */
@@ -137,7 +137,7 @@ main picture img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(62, 39, 35, 0.2);
   display: block;
   margin: 0 auto;
 }
